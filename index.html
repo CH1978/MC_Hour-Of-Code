@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>麥塊一小時程式設計</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Montserrat&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Noto Serif TC', serif;
+      background-color: #faf9f6;
+      color: #444;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #f5f3ee;
+      color: #6b705c;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    nav {
+      background-color: #e7e4d9;
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    nav a {
+      text-decoration: none;
+      color: #6b705c;
+      padding: 0.5rem 1.2rem;
+      border-radius: 12px;
+      background-color: #d8d6cc;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      box-shadow: 1px 1px 3px rgba(107,112,92,0.2);
+    }
+    nav a:hover {
+      background-color: #b5b49b;
+      color: #fff;
+      box-shadow: 2px 2px 5px rgba(107,112,92,0.4);
+    }
+    main {
+      flex: 1;
+      padding: 2.5rem 2rem;
+      background-color: #faf9f6;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .section {
+      background-color: #fff;
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 3px 8px rgba(107,112,92,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .section:hover {
+      box-shadow: 0 6px 15px rgba(107,112,92,0.15);
+    }
+    h2, h3 {
+      color: #6b705c;
+      margin-top: 0;
+      font-weight: 700;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(107,112,92,0.1);
+      display: block;
+      margin: 1rem auto;
+    }
+    ul {
+      padding-left: 1.5rem;
+      color: #4a4a4a;
+    }
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(107,112,92,0.1);
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #e7e4d9;
+      color: #6b705c;
+      font-style: italic;
+      letter-spacing: 0.04em;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+      margin-top: auto;
+    }
+    @media (max-width: 768px) {
+      iframe {
+        height: 200px;
+      }
+      main {
+        padding: 1.5rem 1rem;
+      }
+      nav {
+        gap: 0.75rem;
+      }
+      nav a {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    一個小時程式設計
+  </header>
+
+  <nav>
+    <a href="index.html">一個小時程式設計</a>
+    <a href="MCHourOfCode01.html">AI for Good</a>
+    <a href="MCHourOfCode02.html">編碼鎮</a>
+    <!-- <a href="MCHourOfCode03.html">時間世界</a> -->
+    <!-- <a href="MCHourOfCode04.html">包容</a> -->
+    <!-- <a href="MCHourOfCode05.html">逃出莊園</a> -->
+    <!-- <a href="MCHourOfCode06.html"> 表演</a> -->
+  </nav>
+
+  <main>
+    <section class="section">
+      <h2>主題一：Minecraft 的 AI 森林救援任務</h2>
+    </section>
+
+    <section class="section">
+      <img src="images/hourofcode.png" alt="主題一封面圖片" />
+    </section>
+
+    <section class="section">
+      <p>
+        你準備好開始冒險了嗎？<br>
+        在這堂課中，我們將使用《Minecraft 教育版》搭配 MakeCode 積木程式，讓學生在遊戲世界中學會「邏輯思考」、「解決問題」和「創意思考」！<br>
+        本活動結合了遊戲化學習與基礎程式設計概念，讓孩子們透過操作角色、蓋房子、放煙火、製作迷宮等任務，實際體驗「指令」、「事件」、「重複」等程式語言的基本元素，從玩中學，從學中創造！
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>🧠 Minecraft 一小時程式設計：學習重點</h3>
+      <ul>
+        <li><strong>程式邏輯入門</strong>：認識順序、條件判斷、迴圈與變數概念</li>
+        <li><strong>積木式編程</strong>：使用 MakeCode 操作積木程式，簡單好上手</li>
+        <li><strong>遊戲任務導向</strong>：透過冒險任務學習指令、事件與流程設計</li>
+        <li><strong>核心素養發展</strong>：培養創造力、問題解決與團隊合作能力</li>
+        <li><strong>接軌課綱標準</strong>：對應 CSTA 標準，適合國小 3～6 年級學生</li>
+      </ul>
+    </section>
+    
+<!--
+    <section class="section">
+      <h3>重點整理</h3>
+      <ul>
+        <li>認識 MakeCode 程式編輯器</li>
+        <li>建立 Minecraft 程式連線</li>
+        <li>使用移動方塊讓角色自動走</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>📘 電子書</h3>
+      <a href="#">下載主題一電子書（PDF）</a>
+    </section>
+
+    <section class="section">
+      <h3>🎬 教學影片</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </section>
+
+    <section class="section">
+      <h3>🔗 參考文件</h3>
+      <a href="https://makecode.minecraft.net/">MakeCode Minecraft 官方網站</a>
+    </section>
+
+    <section class="section">
+      <h3>📦 下載專區</h3>
+      <ul>
+        <li><a href="#">程式碼檔案.zip</a></li>
+        <li><a href="#">Minecraft 世界地圖.mcworld</a></li>
+      </ul>
+    </section>
+
+    -->
+
+  </main>
+
+  <footer>
+    © 2025 by 麥塊程式小教室
+  </footer>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft 程式小鎮</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Montserrat&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Noto Serif TC', serif;
+      background-color: #faf9f6;
+      color: #444;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #f5f3ee;
+      color: #6b705c;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    nav {
+      background-color: #e7e4d9;
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    nav a {
+      text-decoration: none;
+      color: #6b705c;
+      padding: 0.5rem 1.2rem;
+      border-radius: 12px;
+      background-color: #d8d6cc;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      box-shadow: 1px 1px 3px rgba(107,112,92,0.2);
+    }
+    nav a:hover {
+      background-color: #b5b49b;
+      color: #fff;
+      box-shadow: 2px 2px 5px rgba(107,112,92,0.4);
+    }
+    main {
+      flex: 1;
+      padding: 2.5rem 2rem;
+      background-color: #faf9f6;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .section {
+      background-color: #fff;
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 3px 8px rgba(107,112,92,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .section:hover {
+      box-shadow: 0 6px 15px rgba(107,112,92,0.15);
+    }
+    h2, h3, h4 {
+      color: #6b705c;
+      margin-top: 0;
+      font-weight: 700;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(107,112,92,0.1);
+      display: block;
+      margin: 1rem auto;
+    }
+    ul {
+      padding-left: 1.5rem;
+      color: #4a4a4a;
+    }
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(107,112,92,0.1);
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #e7e4d9;
+      color: #6b705c;
+      font-style: italic;
+      letter-spacing: 0.04em;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+      margin-top: auto;
+    }
+    @media (max-width: 768px) {
+      iframe {
+        height: 200px;
+      }
+      main {
+        padding: 1.5rem 1rem;
+      }
+      nav {
+        gap: 0.75rem;
+      }
+      nav a {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    編碼鎮
+  </header>
+
+  <nav>
+    <a href="index.html">一個小時程式設計</a>
+    <a href="MCHourOfCode01.html">AI for Good</a>
+    <a href="MCHourOfCode02.html">編碼鎮</a>
+    <!--<a href="MCHourOfCode03.html">時間世界</a>-->
+    <!-- <a href="MCHourOfCode04.html">包容</a> -->
+    <!-- <a href="MCHourOfCode05.html">逃出莊園</a> -->
+    <!-- <a href="MCHourOfCode06.html"> 表演</a> -->
+  </nav>
+
+  <main>
+    <section class="section">
+      <h2>Minecraft 程式小鎮</h2>
+    </section>
+
+    <section class="section">
+      <img src="images/Code Town.png" alt="主題一封面圖片" />
+    </section>
+
+    <section class="section">
+      <p>🌟 課程目標</p>
+      <ul>
+        <li>✅ 順序（依照步驟執行）</li>
+        <li>✅ 重複（Loop）</li>
+        <li>✅ 當條件成立才做（條件判斷）</li>
+        <li>✅ 迴圈裡再放迴圈（巢狀迴圈）</li>
+        <li>學會如何把一個任務分解成多個小步驟來完成</li>
+        <li>利用不斷嘗試與修改，完成不同的任務挑戰</li>
+      </ul>
+      <p>
+        🧠 故事背景<br>
+        小鎮上原本有一幅美麗的壁畫，但現在壁畫的 9 塊拼圖全都散落在村莊的各個角落了！<br>
+        你要幫忙用程式，讓 Minecraft 裡的「代理人」去完成各種任務、解開挑戰，才能找到每一塊拼圖，把它們放回正確的位置，讓壁畫恢復原樣！
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>重點整理</h3>
+      <ul>
+        <li>1. 找到任務的 NPC（遊戲角色）</li>
+        <li>2. 讀取 NPC 給你的說明</li>
+        <li>3. 按下「START」開始寫程式</li>
+        <li>4. 按下鍵盤上的「C」開啟程式編輯器</li>
+        <li>5. 用積木程式讓代理人完成任務</li>
+        <li>6. 任務失敗？沒關係！可以再跟 NPC 對話按「Try again」重新挑戰！</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>🧩 任務流程示意圖</h3>
+
+      <h4>程式 01</h4>
+      <img src="images/MCHourOfCode02/Code01.png" alt="程式01 流程圖" />
+
+      <h4>程式 02</h4>
+      <img src="images/MCHourOfCode02/Code02.png" alt="程式02 流程圖" />
+
+      <h4>程式 03</h4>
+      <img src="images/MCHourOfCode02/Code03.png" alt="程式03 流程圖" />
+
+      <h4>程式 04</h4>
+      <img src="images/MCHourOfCode02/Code04.png" alt="程式04 流程圖" />
+
+      <h4>程式 05</h4>
+      <img src="images/MCHourOfCode02/Code05.png" alt="程式05 流程圖" />
+
+      <h4>程式 06</h4>
+      <img src="images/MCHourOfCode02/Code06.png" alt="程式06 流程圖" />
+
+      <h4>程式 07</h4>
+      <img src="images/MCHourOfCode02/Code07.png" alt="程式07 流程圖" />
+
+      <h4>程式 08</h4>
+      <img src="images/MCHourOfCode02/Code08.png" alt="程式08 流程圖" />
+    </section>
+
+    <section class="section">
+      <h3>📘 電子書</h3>
+      <a href="#">下載主題一電子書（PDF）</a>
+    </section>
+
+    <section class="section">
+      <h3>🎬 教學影片</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </section>
+
+    <section class="section">
+      <h3>🔗 參考文件</h3>
+      <a href="https://makecode.minecraft.net/">MakeCode Minecraft 官方網站</a>
+    </section>
+
+    <section class="section">
+      <h3>📦 下載專區</h3>
+      <ul>
+        <li><a href="#">程式碼檔案.zip</a></li>
+        <li><a href="#">Minecraft 世界地圖.mcworld</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 by 麥塊程式小教室
+  </footer>
+</body>
+</html>
